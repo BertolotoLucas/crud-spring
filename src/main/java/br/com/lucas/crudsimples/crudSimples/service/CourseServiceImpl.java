@@ -39,6 +39,6 @@ public class CourseServiceImpl implements CourseService{
         //if (courseOptional.isPresent()) {
         //    courseRepository.delete(courseOptional.get());
         //}
-        //courseOptional.ifPresent(courseRepository::delete);
+        courseOptional.ifPresent(courseRepository::delete);
     }
 }
